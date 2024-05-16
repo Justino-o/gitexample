@@ -14,9 +14,11 @@ public class bee extends Actor
      */
     public void act()
     {
-        move(5);
+        int sugma = 0;
+        move(5+sugma);
         if(isAtEdge()){
             turn(45);
+            sugma+=100;
         }
     }
 }
